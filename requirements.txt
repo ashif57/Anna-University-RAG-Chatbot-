@@ -1,0 +1,8 @@
+
+streamlit
+langchain
+chromadb
+sentence-transformers
+tiktoken
+python-dotenv
+openai     # still needed for LangChain to work with OpenRouter structure
