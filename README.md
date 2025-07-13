@@ -4,78 +4,79 @@
 ```markdown
 # 🎓 Anna University RAG Chatbot
 
-An AI-powered Streamlit chatbot that uses Retrieval-Augmented Generation (RAG) to answer questions about Anna University based on a structured `.txt` knowledge base. This project utilizes LangChain, HuggingFace Embeddings, ChromaDB for vector search, and OpenRouter API (DeepSeek model) for generating accurate, contextual answers.
+An AI-powered Streamlit chatbot that uses **Retrieval-Augmented Generation (RAG)** to answer questions about Anna University using a structured `.txt` knowledge base. Built with **LangChain**, **HuggingFace Embeddings**, **ChromaDB** for vector retrieval, and the **OpenRouter API (DeepSeek model)** for contextual, high-quality responses.
 
 ---
 
 ## 🚀 Live Demo
 
-🔗 [Live Link](#)  
-
+🔗 [Live Chatbot (coming soon)](#)  
+📄 [Project Report (optional)](#)
 
 ---
 
 ## 🧠 Features
 
-- 📖 Load and index a `.txt` knowledge base about Anna University
-- 💬 Ask questions in natural language and get relevant, grounded answers
-- 🔍 Uses LangChain with ChromaDB for vector retrieval
+- 📖 Load and index `.txt` knowledge base about Anna University
+- 💬 Ask natural language questions and receive relevant answers
+- 🔍 Fast vector search with ChromaDB and HuggingFace Embeddings
 - 🤖 Powered by DeepSeek LLM via OpenRouter API
-- 🧠 HuggingFace Sentence-Transformers for free and fast embedding
-- 🌐 Streamlit web interface for interactive chatting
+- 🔗 LangChain for structured RAG pipelines
+- 🌐 Streamlit UI for easy and interactive access
 
 ---
 
 ## 🖼️ Screenshots
 
-> *(Add screenshots here of Streamlit UI and sample conversations)*
+> *(Add screenshots of Streamlit UI and sample Q&A responses here)*
 
 ---
 
 ## 🧱 Tech Stack
 
-| Layer             | Tool / Library                                       |
-|------------------|-------------------------------------------------------|
-| LLM               | [DeepSeek via OpenRouter API](https://openrouter.ai) |
-| Vector DB         | [ChromaDB](https://www.trychroma.com/)               |
-| Embeddings        | HuggingFace (`all-MiniLM-L6-v2`)                     |
-| RAG Framework     | [LangChain](https://www.langchain.com/)              |
-| UI                | [Streamlit](https://streamlit.io)                    |
-| Dev Tools         | Python, dotenv, sentence-transformers                |
+| Layer         | Tool / Library                                         |
+|---------------|--------------------------------------------------------|
+| LLM           | [DeepSeek via OpenRouter API](https://openrouter.ai)  |
+| Vector Store  | [ChromaDB](https://www.trychroma.com/)                |
+| Embeddings    | HuggingFace (`all-MiniLM-L6-v2`)                      |
+| RAG Framework | [LangChain](https://www.langchain.com/)               |
+| UI            | [Streamlit](https://streamlit.io)                     |
+| Dev Tools     | Python, dotenv, sentence-transformers                 |
 
 ---
 
 ## 📂 File Structure
 
 ```
-
 annauniv-rag-bot/
 │
 ├── .env                         # API key for OpenRouter
 ├── requirements.txt             # Python dependencies
 │
 ├── data/
-│   └── anna\_university.txt      # Knowledge base file
+│   └── anna_university.txt      # Knowledge base file
 │
 ├── vectorstore/                 # ChromaDB persistent storage
 │
-├── ingest.py                    # Split and embed `.txt` into ChromaDB
-├── rag\_chain.py                 # LLM + Retriever Chain definition
-└── app.py                       # Streamlit UI to chat with the bot
-
-````
+├── ingest.py                    # Load and embed `.txt` data
+├── rag_chain.py                 # RAG pipeline setup using LangChain
+└── app.py                       # Streamlit app entry point
+```
 
 ---
 
 ## 🛠️ Installation
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/ashif57/annauniv-rag-bot.git
 cd annauniv-rag-bot
-````
+```
 
-### 2. Create `.env` File
+### 2. Set Up Environment Variables
+
+Create a `.env` file and add your OpenRouter API key:
 
 ```env
 API_KEY=your_openrouter_api_key
@@ -87,13 +88,13 @@ API_KEY=your_openrouter_api_key
 pip install -r requirements.txt
 ```
 
-### 4. Prepare Vector Store
+### 4. Prepare the Vector Store
 
 ```bash
 python ingest.py
 ```
 
-### 5. Launch Streamlit App
+### 5. Launch the Streamlit App
 
 ```bash
 streamlit run app.py
@@ -103,10 +104,10 @@ streamlit run app.py
 
 ## 💡 How It Works
 
-1. `ingest.py` loads the `.txt` file, splits it into chunks, embeds using HuggingFace, and saves to Chroma.
-2. `rag_chain.py` loads the vector store and sets up a `RetrievalQA` chain using LangChain.
-3. `app.py` runs a Streamlit UI for chatting with the bot.
-4. OpenRouter LLM (e.g., DeepSeek) generates responses using the retrieved chunks as context.
+1. `ingest.py` splits the `.txt` knowledge base into chunks and generates embeddings using HuggingFace.
+2. Embeddings are stored in a local ChromaDB vector store.
+3. `rag_chain.py` sets up a `RetrievalQA` chain using LangChain and DeepSeek LLM via OpenRouter.
+4. `app.py` hosts a Streamlit interface for querying the bot in real time.
 
 ---
 
@@ -124,36 +125,41 @@ streamlit run app.py
 
 ## 📌 Limitations
 
-* Requires accurate and well-structured `.txt` data.
-* Currently supports only one knowledge base file.
-* DeepSeek is used in free-tier mode; performance may vary.
+- ⚠️ Requires clean, well-structured `.txt` files for accuracy
+- 📄 Currently supports only one knowledge base file at a time
+- 🌐 Dependent on free-tier OpenRouter models (performance may vary)
 
 ---
 
 ## ✅ Future Improvements
 
-* Support for multiple file types (PDF, CSV, etc.)
-* Add memory and chat history
-* Add source citation display
-* Use other OpenRouter models dynamically
+- 🗂️ Multi-file support (PDFs, CSVs, etc.)
+- 🧠 Add conversational memory and chat history
+- 📚 Show source context or references
+- 🔄 Option to choose among multiple LLM models
 
 ---
 
 ## 🙏 Acknowledgements
 
-* [LangChain](https://github.com/langchain-ai/langchain)
-* [OpenRouter API](https://openrouter.ai/)
-* [HuggingFace Transformers](https://huggingface.co/)
-* [ChromaDB](https://www.trychroma.com/)
-* [Streamlit](https://streamlit.io)
+- [LangChain](https://github.com/langchain-ai/langchain)
+- [OpenRouter API](https://openrouter.ai/)
+- [HuggingFace Transformers](https://huggingface.co/)
+- [ChromaDB](https://www.trychroma.com/)
+- [Streamlit](https://streamlit.io)
 
 ---
 
+## 📃 License
 
+This project is licensed under the [MIT License](LICENSE).
+
+---
 
 ## 👨‍💻 Author
 
-
+**Your Name** – [AshifNavheed.ai](https://your-portfolio.com)  
 GitHub: [@ashif57](https://github.com/ashif57)
 
 ```
+
