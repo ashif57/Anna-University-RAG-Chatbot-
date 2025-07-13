@@ -1,3 +1,7 @@
+
+---
+
+```markdown
 # 🎓 Anna University RAG Chatbot
 
 An AI-powered Streamlit chatbot that uses Retrieval-Augmented Generation (RAG) to answer questions about Anna University based on a structured `.txt` knowledge base. This project utilizes LangChain, HuggingFace Embeddings, ChromaDB for vector search, and OpenRouter API (DeepSeek model) for generating accurate, contextual answers.
@@ -7,6 +11,7 @@ An AI-powered Streamlit chatbot that uses Retrieval-Augmented Generation (RAG) t
 ## 🚀 Live Demo
 
 🔗 [Live Link](#)  
+
 
 ---
 
@@ -23,7 +28,7 @@ An AI-powered Streamlit chatbot that uses Retrieval-Augmented Generation (RAG) t
 
 ## 🖼️ Screenshots
 
-> 
+> *(Add screenshots here of Streamlit UI and sample conversations)*
 
 ---
 
@@ -41,17 +46,114 @@ An AI-powered Streamlit chatbot that uses Retrieval-Augmented Generation (RAG) t
 ---
 
 ## 📂 File Structure
+
+```
+
 annauniv-rag-bot/
 │
-├── .env                         # Contains the OpenRouter API key
-├── requirements.txt             # Lists all Python dependencies
+├── .env                         # API key for OpenRouter
+├── requirements.txt             # Python dependencies
 │
 ├── data/
-│   └── anna_university.txt      # Knowledge base in plain text format
+│   └── anna\_university.txt      # Knowledge base file
 │
-├── vectorstore/                 # Directory where Chroma stores vector data
+├── vectorstore/                 # ChromaDB persistent storage
 │
-├── ingest.py                    # Script to load, split, embed, and store the text in ChromaDB
-├── rag_chain.py                 # LangChain setup with retriever + LLM (DeepSeek via OpenRouter)
-└── app.py                       # Streamlit app for chatbot UI
+├── ingest.py                    # Split and embed `.txt` into ChromaDB
+├── rag\_chain.py                 # LLM + Retriever Chain definition
+└── app.py                       # Streamlit UI to chat with the bot
 
+````
+
+---
+
+## 🛠️ Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/annauniv-rag-bot.git
+cd annauniv-rag-bot
+````
+
+### 2. Create `.env` File
+
+```env
+API_KEY=your_openrouter_api_key
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Prepare Vector Store
+
+```bash
+python ingest.py
+```
+
+### 5. Launch Streamlit App
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 💡 How It Works
+
+1. `ingest.py` loads the `.txt` file, splits it into chunks, embeds using HuggingFace, and saves to Chroma.
+2. `rag_chain.py` loads the vector store and sets up a `RetrievalQA` chain using LangChain.
+3. `app.py` runs a Streamlit UI for chatting with the bot.
+4. OpenRouter LLM (e.g., DeepSeek) generates responses using the retrieved chunks as context.
+
+---
+
+## 🧪 Example Queries
+
+```text
+- Who was Anna University named after?
+- What are the main departments in CEG Campus?
+- Tell me about Anna University’s research centers.
+- What rankings has Anna University received?
+- Who are some famous alumni of Anna University?
+```
+
+---
+
+## 📌 Limitations
+
+* Requires accurate and well-structured `.txt` data.
+* Currently supports only one knowledge base file.
+* DeepSeek is used in free-tier mode; performance may vary.
+
+---
+
+## ✅ Future Improvements
+
+* Support for multiple file types (PDF, CSV, etc.)
+* Add memory and chat history
+* Add source citation display
+* Use other OpenRouter models dynamically
+
+---
+
+## 🙏 Acknowledgements
+
+* [LangChain](https://github.com/langchain-ai/langchain)
+* [OpenRouter API](https://openrouter.ai/)
+* [HuggingFace Transformers](https://huggingface.co/)
+* [ChromaDB](https://www.trychroma.com/)
+* [Streamlit](https://streamlit.io)
+
+---
+
+
+
+## 👨‍💻 Author
+
+**Your Name** – [your-portfolio.com](https://your-portfolio.com)
+GitHub: [@your-username](https://github.com/your-username)
+
+```
