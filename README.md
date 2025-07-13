@@ -71,7 +71,7 @@ annauniv-rag-bot/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/annauniv-rag-bot.git
+git clone https://github.com/ashif57/annauniv-rag-bot.git
 cd annauniv-rag-bot
 ````
 
@@ -153,7 +153,7 @@ streamlit run app.py
 
 ## 👨‍💻 Author
 
-**Your Name** – [your-portfolio.com](https://your-portfolio.com)
-GitHub: [@your-username](https://github.com/your-username)
+
+GitHub: [@ashif57](https://github.com/ashif57)
 
 ```
