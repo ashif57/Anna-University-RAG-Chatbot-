@@ -154,8 +154,7 @@ streamlit run app.py
 ---
 
 ## 👨‍💻 Author
-
-**Your Name** – [AshifNavheed.ai](https://your-portfolio.com)  
+website – [AshifNavheed.ai](https://your-portfolio.com)  
 GitHub: [@ashif57](https://github.com/ashif57)
 
 ```
