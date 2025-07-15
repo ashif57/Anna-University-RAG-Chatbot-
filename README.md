@@ -10,8 +10,8 @@ An AI-powered Streamlit chatbot that uses **Retrieval-Augmented Generation (RAG)
 
 ## 🚀 Live Demo
 
-🔗 [Live Chatbot (coming soon)](#)  
-📄 [Project Report (optional)](#)
+🔗 [Live Chatbot ](https://anna-university-rag-chatbot.onrender.com)  
+
 
 ---
 
@@ -150,9 +150,6 @@ streamlit run app.py
 
 ---
 
-## 📃 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
