@@ -46,19 +46,19 @@ It processes a `.txt` file knowledge base and responds using OpenRouter LLMs via
 These are some of the questions the chatbot answers correctly:
 
 ### ❓ What are the research centers available at Anna University?
-![Screenshot 1](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question1.png)
+![Screenshot 1](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question4.png)
 
 ### ❓ What are the admission exams for PG programs?
-![Screenshot 2](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question2.png)
+![Screenshot 2](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question3.png)
 
 ### ❓ Is Anna University NAAC accredited?
-![Screenshot 3](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question3.png)
+![Screenshot 3](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question5.png)
 
 ### ❓ Who is the founder of Anna University?
-![Screenshot 4](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question4.png)
+![Screenshot 4](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question2.png)
 
 ### ❓ When was Anna University established?
-![Screenshot 5](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question5.png)
+![Screenshot 5](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question1.png)
 
 ---
 
