@@ -11,7 +11,7 @@ An AI-powered Streamlit chatbot that uses **Retrieval-Augmented Generation (RAG)
 ## 🚀 Live Demo
 
 🔗 [Live Chatbot (coming soon)](#)  
-📄 [Project Report (optional)](#)
+
 
 ---
 
@@ -26,9 +26,25 @@ An AI-powered Streamlit chatbot that uses **Retrieval-Augmented Generation (RAG)
 
 ---
 
-## 🖼️ Screenshots
 
-> *(Add screenshots of Streamlit UI and sample Q&A responses here)*
+## 📸 Demo Screenshots
+
+> These questions were successfully answered:
+
+### ❓ What are the research centers available at Anna University?
+![Screenshot 1](screenshots/question4.png)
+
+### ❓ What are the admission exams for PG programs?
+![Screenshot 2](screenshots/question3.png)
+
+### ❓ Is Anna University NAAC accredited?
+![Screenshot 3](screenshots/question5.png)
+
+### ❓ Who is the founder of Anna University?
+![Screenshot 4](screenshots/question2.png)
+
+### ❓ When was Anna University established?
+![Screenshot 5](screenshots/question1.png)
 
 ---
 
@@ -158,7 +174,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-**Your Name** – [AshifNavheed.ai](https://your-portfolio.com)  
+**Your Name** – [AshifNavheed.ai](https://ashif57.github.io/portfolio/)  
 GitHub: [@ashif57](https://github.com/ashif57)
 
 ```
