@@ -1,6 +1,3 @@
-
-
-```markdown
 # 🎓 Anna University RAG Chatbot
 
 An AI-powered chatbot that answers factual questions about **Anna University** using Retrieval-Augmented Generation (RAG).  
@@ -10,38 +7,39 @@ It processes a `.txt` file knowledge base and responds using OpenRouter LLMs via
 
 ## 🔗 Live Demo
 
-👉 [Click to Try the Bot](https://anna-university-rag-chatbot.onrender.com)  
-
+👉 [Click to Try the Bot](https://anna-university-rag-chatbot.onrender.com)
 
 ---
 
 ## 🧠 How It Works
 
-- 🔍 Extracts embeddings from a `.txt` file containing university info
-- 🧠 Stores vectors in **ChromaDB**
-- 💬 Uses **LangChain** with **OpenRouter API** to answer natural language queries
+- 🔍 Extracts embeddings from a `.txt` file containing university info  
+- 🧠 Stores vectors in **ChromaDB**  
+- 💬 Uses **LangChain** with **OpenRouter API** to answer natural language queries  
 - 🖼️ Displays via **Streamlit UI**
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- Streamlit
-- LangChain
-- ChromaDB
-- OpenRouter API
-- Sentence Transformers (MiniLM)
+- Python  
+- Streamlit  
+- LangChain  
+- ChromaDB  
+- OpenRouter API  
+- Sentence Transformers (MiniLM)  
 - dotenv
 
 ---
 
 ## ✅ Features
 
-- ❓ Ask any factual question about Anna University
-- 🔎 Text-based RAG retrieval from a `.txt` file
-- 🔐 Secure API key via `.env` (excluded from Git)
+- ❓ Ask any factual question about Anna University  
+- 🔎 Text-based RAG retrieval from a `.txt` file  
+- 🔐 Secure API key via `.env` (excluded from Git)  
 - 📦 Easily deployable on platforms like Render, Railway, or Replit
+
+---
 
 ## 🧪 Sample Questions
 
@@ -62,30 +60,27 @@ These are some of the questions the chatbot answers correctly:
 ### ❓ When was Anna University established?
 ![Screenshot 5](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question5.png)
 
+---
 
 ## 📁 Project Structure
 
-```
-
 Anna-University-RAG-Chatbot-/
-├── app.py                 # Streamlit app UI
-├── ingest.py              # Embedding script
-├── rag\_chain.py           # LangChain pipeline logic
+├── app.py # Streamlit app UI
+├── ingest.py # Embedding script
+├── rag_chain.py # LangChain pipeline logic
 ├── data/
-│   └── anna\_university.txt
-├── vectorstore/           # Stores ChromaDB vectors (auto-generated)
-├── .env                   # Contains OpenRouter API key (not committed)
-├── requirements.txt       # Python dependencies
-├── screenshots/           # Demo images for README
+│ └── anna_university.txt
+├── vectorstore/ # Stores ChromaDB vectors (auto-generated)
+├── .env # Contains OpenRouter API key (not committed)
+├── requirements.txt # Python dependencies
+├── screenshots/ # Demo images for README
 └── README.md
-
-````
 
 ---
 
 ## 🚀 Local Development
 
-```bash
+
 # 1. Clone the repo
 git clone https://github.com/ashif57/Anna-University-RAG-Chatbot-.git
 cd Anna-University-RAG-Chatbot-
@@ -105,20 +100,14 @@ python ingest.py
 
 # 6. Launch the Streamlit app
 streamlit run app.py
-````
 
----
+🙌 Acknowledgements
+OpenRouter API
 
-## 🙌 Acknowledgements
+LangChain
 
-* [OpenRouter API](https://openrouter.ai)
-* [LangChain](https://www.langchain.com/)
-* [ChromaDB](https://www.trychroma.com/)
-* [Streamlit](https://streamlit.io/)
+ChromaDB
 
-```
+Streamlit
 
----
-
-(`Built with ❤️ by Ashif`) 
-```
+Built with ❤️ by Ashif
