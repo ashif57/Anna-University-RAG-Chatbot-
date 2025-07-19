@@ -43,8 +43,6 @@ It processes a `.txt` file knowledge base and responds using OpenRouter LLMs via
 - 🔐 Secure API key via `.env` (excluded from Git)
 - 📦 Easily deployable on platforms like Render, Railway, or Replit
 
----
-
 ## 🧪 Sample Questions
 
 These are some of the questions the chatbot answers correctly:
@@ -64,7 +62,6 @@ These are some of the questions the chatbot answers correctly:
 ### ❓ When was Anna University established?
 ![Screenshot 5](https://raw.githubusercontent.com/ashif57/Anna-University-RAG-Chatbot-/main/screenshots/question5.png)
 
----
 
 ## 📁 Project Structure
 
